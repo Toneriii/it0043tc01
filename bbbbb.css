@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(https://pa1.aminoapps.com/5740/78bb4bae24938468a6a0b6cbdb7224beae3b7b95_00.gif);
+    background-size: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.card {
+    background-color: #bbbaba;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #333;
+}
+
+.card-image {
+    position: relative;
+    background-image: url('card-bg.jpg_large');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+.card-image img {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.types {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.type {
+    margin-bottom: 5px;
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.type.single {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.type.fire {
+    background-color: #f88e7d;
+}
+
+.type.flying {
+    background-color: #a890f0;
+}
+
+.type.psychic {
+    background-color: #f8a5c2;
+    padding: 5px 12px;
+    border-radius: 25px;
+}
+
+.type.dark {
+    background-color: #705848;
+    color: #fff;
+}
+
+.type.dragon {
+    background-color: #97b3e6;
+}
+
+.type.electric {
+    background-color: #ffcc00;
+}
+
+.type.ice {
+    background-color: #98d8d8;
+}
+
+.type.poison {
+    background-color: #ac6acb;
+    color: #fff;
+}
+
+.type.fairy {
+    background-color: #fceaff;
+    padding: 5px 12px;
+    border-radius: 25px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
