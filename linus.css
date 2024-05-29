@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.pokemon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemon {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.pokemon img {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.pokemon h3 {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.pokemon-type {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.psychic {
+    background-color: #f8a5c2;
+}
+
+.grass {
+    background-color: #9bcc50;
+}
+
+.fire {
+    background-color: #f08030;
+}
+
+.dragon {
+    background-color: #7038f8;
+}
+
+.normal {
+    background-color: #a8a878;
+}
+
+.fighting {
+    background-color: #c03028;
+}
+
+.electric {
+    background-color: #f8d030;
+}
+
+.water {
+    background-color: #6890f0;
+}
+
+@media (max-width: 768px) {
+    .pokemon {
+        width: 33.33%;
+    }
+}
+
+@media (max-width: 480px) {
+    .pokemon {
+        width: 50%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pokemon img {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+    }
+
+    .pokemon h3 {
+        margin: 0;
+        text-align: left;
+    }
+
+    .pokemon-type {
+        display: none;
+    }
+}
+
+.pokemon:hover {
+    transform: scale(1.1);
+}
+
+.pokemon:hover img {
+    background-image: url('pokeball.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 20%;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 480px) {
+    .pokemon:hover img {
+        background-image: none;
+        padding-bottom: 5px;
+    }
+}
+
+.pokemon:hover .pokemon-type {
+    display: block;
+}
