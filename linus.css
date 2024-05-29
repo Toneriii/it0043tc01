@@ -55,7 +55,7 @@ body {
 .pokemon-type {
     display: none;
     position: absolute;
-    bottom: 10px;
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
     padding: 5px 10px;
@@ -64,6 +64,7 @@ body {
     text-transform: uppercase;
     font-size: 0.8em;
     color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .psychic { background-color: #f8a5c2; }
@@ -103,23 +104,35 @@ body {
     }
 }
 
+/* Responsive List View */
 @media (max-width: 480px) {
+    .pokemon-grid {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
     .pokemon {
         width: 100%;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        border: 1px solid #ddd;
+        margin: 5px 0;
+        padding: 10px;
+        transition: background-color 0.3s ease;
     }
 
     .pokemon img {
         width: 50px;
         height: 50px;
-        padding: 5px;
+        padding: 0;
+        margin-right: 10px;
     }
 
     .pokemon h3 {
-        margin: 0 10px;
+        margin: 0;
         text-align: left;
+        flex-grow: 1;
     }
 
     .pokemon-type {
@@ -127,15 +140,30 @@ body {
         position: static;
         transform: none;
         padding: 5px 10px;
+        margin-left: 10px;
+        background-color: rgba(0, 0, 0, 0.6);
     }
 
     .pokemon:hover img {
         background-image: none;
-        padding-bottom: 5px;
+        padding-bottom: 0;
     }
 
     .pokemon:hover .pokemon-type {
         display: inline-block;
+    }
+
+    .pokemon:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .pokeball-icon {
+        width: 30px;
+        height: 30px;
+        background-image: url('pokeball.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: 10px;
     }
 }
 
