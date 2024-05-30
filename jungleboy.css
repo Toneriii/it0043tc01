@@ -81,7 +81,7 @@ h1 {
     }
 
     .pokemon-card:hover {
-        background-image: url('https://www.hdwallpapers.net/previews/pokeball-1032.jpg');
+        background-image: url('https://th.bing.com/th/id/R.6ba033796b3a67501d6a8edd875ec57f?rik=0FjmluNHkkc%2b%2fA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fxFuN7Fy.jpg&ehk=u5ctbEHZvdQJxmSy03%2fBfUFhKJOEag7bMyNqLwk%2fUOE%3d&risl=&pid=ImgRaw&r=0');
         background-size: cover;
         align-items: center;
     }
