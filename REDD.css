@@ -127,7 +127,7 @@ main {
 }
   
   .gallery-images img {
-    margin: 10px; /* add some margin to separate the images */
+    margin: 10px;
     width: 410px;
     height: auto;
 }
