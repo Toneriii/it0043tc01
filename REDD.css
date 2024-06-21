@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+main {
+    background-image: url('https://wallpapers.com/images/featured/pokemon-landscape-yf5odhgkds0n53yl.jpg');
+    background-size: cover;
+    background-position: 0 100%;
+    background-attachment: fixed;
+    background-color: rgb(0, 0, 0);
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.377);
+    
+}
+
+#poster {
+    justify-content: center;
+    text-align: center;
+}
+
+#poster img {
+    border: 10px solid black;
+    margin-top: 10px;
+    width: 300px;
+    height: 350px;
+}
+
+#poster h1 {
+    
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+}
+#trailer {
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#story {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#characters {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#id {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#episodes {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#gallery {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.character-gallery {
+    display: flex;
+    gap: 2em;
+}
+
+.character {
+    align-items: center;
+}
+
+.character img {
+    width: 100%;
+    height: 200px;
+    max-width: 200px;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  
+  .gallery-images img {
+    margin: 10px; /* add some margin to separate the images */
+    width: 410px;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .character-gallery, .gallery-images {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero h1 {
+        font-size: 1.2em;
+        padding: 0.5em;
+    }
+}
