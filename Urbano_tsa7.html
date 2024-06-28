@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Simulator</title>
+    <link rel="stylesheet" href="guts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <h2>Flexbox Controls</h2>
+            <div class="control-group">
+                <button id="resetFlexbox">Reset Flexbox</button>
+                <div class="gap-control">
+                    <input type="number" id="gapInput" value="0" min="0">
+                    <button id="gapButton">Gap</button>
+                </div>
+            </div>
+            <div class="control-group">
+                <h3>Flex Direction</h3>
+                <button id="flexRow">Row</button>
+                <button id="flexColumn">Column</button>
+            </div>
+            <div class="control-group">
+                <h3>Justify Content</h3>
+                <button id="justifyStart">Start</button>
+                <button id="justifyEnd">End</button>
+                <button id="justifyCenter">Center</button>
+                <button id="justifySpaceBetween">Space Between</button>
+                <button id="justifySpaceEvenly">Space Evenly</button>
+                <button id="justifySpaceAround">Space Around</button>
+            </div>
+            <div class="control-group">
+                <h3>Align Items</h3>
+                <button id="alignStart">Start</button>
+                <button id="alignEnd">End</button>
+                <button id="alignCenter">Center</button>
+            </div>
+            <div class="control-group">
+                <h3>Flex Grow</h3>
+                <button id="resetGrow">Reset</button>
+                <button id="growAll">Grow All</button>
+                <div class="grow-control">
+                    <button id="growBox1">Box 7</button>
+                    <input type="number" id="growBox1Input" value="0" min="0">
+                </div>
+                <div class="grow-control">
+                    <button id="growBox2">Box 8</button>
+                    <input type="number" id="growBox2Input" value="0" min="0">
+                </div>
+                <div class="grow-control">
+                    <button id="growBox3">Box 9</button>
+                    <input type="number" id="growBox3Input" value="0" min="0">
+                </div>
+            </div>
+        </div>
+        <div class="simulator">
+            <div id="flexContainer">
+                <div class="box">7</div>
+                <div class="box">8</div>
+                <div class="box">9</div>
+            </div>
+        </div>
+    </div>
+    <script src="griffith.js"></script>
+</body>
+</html>
