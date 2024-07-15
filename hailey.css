@@ -80,6 +80,8 @@ h2 {
 #home {
     text-align: center;
     padding: 6rem 0;
+    background-color: #ffffff;
+    margin-top: 4rem;
 }
 
 .profile-picture img {
@@ -191,10 +193,6 @@ h2 {
     background-color: #ffeb3b;
 }
 
-.faq-item {
-    margin-bottom: 1.5rem;
-}
-
 .contact-info h3 {
     margin-top: 1rem;
 }
@@ -270,6 +268,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+    margin-top: 4rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -282,16 +281,35 @@ footer {
         margin: 0.5rem 0;
     }
 
-    .portfolio-grid {
-        grid-template-columns: 1fr;
+    #home {
+        padding-top: 6rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 0.5rem 0;
+    }
+
+    nav ul li {
+        margin: 0.3rem 0;
+    }
+
+    #home {
+        padding-top: 8rem;
     }
 
     .about-content {
         flex-direction: column;
+        align-items: center;
     }
 
     .about-image {
         width: 100%;
-        max-width: 250px;
+        max-width: 200px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
     }
 }
